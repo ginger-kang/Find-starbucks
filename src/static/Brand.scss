@@ -1,13 +1,11 @@
 .cafeBrand {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
-    position: relative;
 
     li {
-        width: 15rem;
-        height: 15rem;
+        width: 13rem;
+        height: 13rem;
         display: inline-block;
         transition: transform .2s;
 
@@ -18,9 +16,9 @@
         }
         
         &:hover {
-            -ms-transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+            -ms-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
         }
     }
 }

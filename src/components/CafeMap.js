@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const { kakao } = window;
 
-const CafeMap = () => {
+const CafeMap = (props) => {
 
     const placeMap = () => {
         const container = document.getElementById('myMap');
@@ -13,7 +13,7 @@ const CafeMap = () => {
         const map = new kakao.maps.Map(container, options);
 
         const ps = new kakao.maps.services.Places(); 
-        console.log(ps);
+        console.log(props);
 
         const placesSearchDB = (( data,status,pagination ) => {
             if ( status === kakao.maps.services.Status.OK ) {
@@ -28,7 +28,7 @@ const CafeMap = () => {
             }
         });
 
-        ps.keywordSearch('신촌', placesSearchDB);
+        ps.keywordSearch(props.props, placesSearchDB);
 
         function displayMarker(place) {
             var marker = new kakao.maps.Marker({

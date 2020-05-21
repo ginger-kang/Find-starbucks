@@ -11,7 +11,6 @@ function App() {
       <CafeTitle />
       <div className='main__view'>
         <SearchPlace />
-        <CafeMap />
       </div>
     </>
   );
