@@ -4,8 +4,8 @@
     flex-wrap: wrap;
 
     li {
-        width: 13rem;
-        height: 13rem;
+        width: 12rem;
+        height: 12rem;
         display: inline-block;
         transition: transform .2s;
 
@@ -16,9 +16,9 @@
         }
         
         &:hover {
-            -ms-transform: scale(1.5);
-            -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+            -ms-transform: scale(1.4);
+            -webkit-transform: scale(1.4);
+            transform: scale(1.4);
         }
     }
 }

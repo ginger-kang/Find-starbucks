@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react';
+import '../static/Map.scss';
 
 const { kakao } = window;
 
 const CafeMap = (props) => {
 
-    const placeMap = () => {
+    useEffect(() => {
         const container = document.getElementById('myMap');
 		const options = {
-			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			center: new kakao.maps.LatLng(37.5511311, 126.9867407),
 			level: 3
 		};
         const map = new kakao.maps.Map(container, options);
@@ -36,15 +37,13 @@ const CafeMap = (props) => {
                 position: new kakao.maps.LatLng(place.y, place.x) 
             });
         }
-
-    };
+    });
 
     return (
         <>
-            <button style={{width: '50px', height: '50px'}} onClick={placeMap}>dsdd</button>
             <div id='myMap' style={{
-                width: '500px', 
-                height: '500px'
+                width: '350px', 
+                height: '350px'
             }}></div>
         </>
     );

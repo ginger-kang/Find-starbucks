@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CafeBrand from './CafeBrand';
 
-import '../static/Left.scss';
+import '../static/View.scss';
 
 const SearchPlace = () => {
     const [ inputText, setInputText ] = useState('');
@@ -19,17 +19,17 @@ const SearchPlace = () => {
     };
 
     return (
-        <div className='view__left'>
+        <div className='view__center'>
             <div className='inputContainer'>
                 <form className='inputForm' onSubmit={handleSubmit}>
-                    <input placeholder='장소 검색 (ex 이태원역, 홍대)' onChange={onChange} value={inputText}/>
+                    <input placeholder='Search Place...' onChange={onChange} value={inputText}/>
                 </form>
             </div>
             <div className='CafeContainer'>
                 <CafeBrand props={place}/>
             </div>
         </div>
-        
+
     );
 }
 

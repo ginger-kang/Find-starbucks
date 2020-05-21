@@ -43,7 +43,12 @@ function CafeBrand(props) {
             placeName: place,
             cafeName: cafe
         });
-        console.log(result.placeName, result.cafeName);
+        //console.log(result.placeName, result.cafeName);
+    }
+
+    const Reset = () => {
+        setPlace('');
+        setCafe('');
     }
 
     return (
@@ -59,8 +64,8 @@ function CafeBrand(props) {
                 )) }
             </ul>
             <div className='buttonContainer'>
-                <button onClick={handleClick}>검색</button>
-                <button>초기화</button>
+                <button onClick={handleClick}>SEARCH</button>
+                <button onClick={Reset}>RESET</button>
             </div>
             <CafeMap props={`${place} ${cafe}`}/>
         </>

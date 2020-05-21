@@ -1,4 +1,4 @@
-.view__left {
+.view__center {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,7 @@
 
     .CafeContainer {
         width: auto;
+        height: 90%;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -40,14 +41,25 @@
         width: 50%;
         display: flex;
         justify-content: space-around;
+        margin-top: 1.5rem;;
 
         button {
-            font-size: 1.5rem;
+            font-size: 1rem;
             border: none;
             outline: none;
-            color: black;
-            border-radius: 5px;
-            padding: 10px;
+            color: white;
+            border-radius: 30px;
+            padding: 15px;
+            background: rgba(0,0,0,0.5);
+            cursor: pointer;
+            transition: all 0.1s;
+
+            &:hover {
+                -ms-transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+                background: rgba(0,0,0,0.9);
+            }
         }
     }
 }

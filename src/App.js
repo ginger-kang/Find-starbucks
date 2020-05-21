@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.scss';
-import CafeMap from './components/CafeMap';
-import CafeBrand from './components/CafeBrand';
 import SearchPlace from './components/SearchPlace';
 import CafeTitle from './components/CafeTitle';
 
