@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const { kakao } = window;
 
-const MapContainer = () => {
+const CafeMap = () => {
 
     const placeMap = () => {
         const container = document.getElementById('myMap');
@@ -50,4 +50,4 @@ const MapContainer = () => {
     );
 }
 
-export default MapContainer;
+export default CafeMap;

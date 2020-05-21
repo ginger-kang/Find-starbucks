@@ -1,18 +1,17 @@
 import React from 'react';
 import './App.scss';
-import MapContainer from './components/MapContainer';
+import CafeMap from './components/CafeMap';
 import CafeBrand from './components/CafeBrand';
 import SearchPlace from './components/SearchPlace';
-import Nav from './components/Nav';
+import CafeTitle from './components/CafeTitle';
 
 function App() {
   return (
     <>
-      <Nav />
+      <CafeTitle />
       <div className='main__view'>
         <SearchPlace />
-        <CafeBrand />
-        <MapContainer />
+        <CafeMap />
       </div>
     </>
   );

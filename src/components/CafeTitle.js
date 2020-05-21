@@ -1,8 +1,8 @@
 import React from 'react';
 
-import '../static/Nav.scss';
+import '../static/Title.scss';
 
-const Nav = () => {
+const CafeTitle = () => {
     return(
         <div className='headerBar'>
             <span className='title'>CAFEFINDER</span>
@@ -10,4 +10,4 @@ const Nav = () => {
     );
 }
 
-export default Nav;
+export default CafeTitle;
