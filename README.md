@@ -1,6 +1,9 @@
-# Find Starbucks
-Find where the nearest Starbucks is in Seoul<br />
+# ☕️ Find Cafe 🍰
 
+## 🤔 What is CafeFinder?
+Choose a place and cafe to find a cafe
+
+![mainImage](src/static/screenshot/cafefinder.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
